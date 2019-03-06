@@ -2,24 +2,26 @@
 # yarn lockfile v1
 
 
-"@steemit/koa-jsonrpc@^1.1.2":
+"@nrl-demo/koa-jsonrpc@^1.1.2":
   version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@steemit/koa-jsonrpc/-/koa-jsonrpc-1.1.2.tgz#2f50b978a9728e83427dda9c31383a0707bf0340"
+  resolved "https://registry.yarnpkg.com/@nrl-demo/koa-jsonrpc/-/koa-jsonrpc-1.1.2.tgz#5373539d3bd0814458da01f675fee4428fcf679c"
+  integrity sha512-FvQFg1TsHkz735b1eeSgvLe/lduKlYBjwOkR8GqgnnhziHyaXJhXL9hSIC3k4hJLDfPRTb1CkTD80cnj4bzV/A==
   dependencies:
-    "@steemit/rpc-auth" "^1.1.1"
-    dsteem "^0.8.6"
+    "@nrl-demo/rpc-auth" "^1.1.3"
+    dknowledgr "^0.11.4"
     uuid "^3.2.1"
     verror "^1.10.0"
+
+"@nrl-demo/rpc-auth@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@nrl-demo/rpc-auth/-/rpc-auth-1.1.3.tgz#aadb3c7cce2d0217522635c16f0d0db4de3dc836"
+  integrity sha512-EKxkklUyOqT8/T2vygP+5zskvpZujyXur0iilLFwh7lVcZQR0k1uAHYFGYWH4ShKtpah+TXUxfO+LyLQ+r/Osg==
+  dependencies:
+    "@steemit/libcrypto" "^1.0.1"
 
 "@steemit/libcrypto@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@steemit/libcrypto/-/libcrypto-1.0.1.tgz#c31ab3e5deb667628169b3d54d746b015de31a79"
-
-"@steemit/rpc-auth@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@steemit/rpc-auth/-/rpc-auth-1.1.1.tgz#8f6239e89783d2b251b49e9e1b9486b5d167f944"
-  dependencies:
-    "@steemit/libcrypto" "^1.0.1"
 
 "@types/accepts@*":
   version "1.3.4"
@@ -295,6 +297,19 @@ diff@^3.2.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.4.0.tgz#b1d85507daf3964828de54b37d0d73ba67dda56c"
 
+dknowledgr@^0.11.4:
+  version "0.11.4"
+  resolved "https://registry.yarnpkg.com/dknowledgr/-/dknowledgr-0.11.4.tgz#f591779beffc7084f7a1e0ad79689a3bd274a815"
+  integrity sha512-WD14O8B9sevolY6qpi0lx8Yt8L84Sej+eCeBJpFknHF2GXnpEKWGFAuGkGMiHV3wAJ329hOCYrXagqpZ2OVnRg==
+  dependencies:
+    bs58 "^4.0.1"
+    bytebuffer "^5.0.1"
+    core-js "^2.5.0"
+    node-fetch "^2.3.0"
+    secp256k1 "^3.5.2"
+    verror "^1.10.0"
+    whatwg-fetch "^3.0.0"
+
 drbg.js@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/drbg.js/-/drbg.js-1.0.1.tgz#3e36b6c42b37043823cdbc332d58f31e2445480b"
@@ -302,18 +317,6 @@ drbg.js@^1.0.1:
     browserify-aes "^1.0.6"
     create-hash "^1.1.2"
     create-hmac "^1.1.4"
-
-dsteem@^0.8.6:
-  version "0.8.6"
-  resolved "https://registry.yarnpkg.com/dsteem/-/dsteem-0.8.6.tgz#6f11333903537503267441e842ae92117beadcc0"
-  dependencies:
-    bs58 "^4.0.1"
-    bytebuffer "^5.0.1"
-    core-js "^2.5.0"
-    node-fetch "^2.0.0-alpha.9"
-    secp256k1 "^3.3.1"
-    verror "^1.10.0"
-    whatwg-fetch "^2.0.3"
 
 elliptic@^6.2.3:
   version "6.4.0"
@@ -454,9 +457,10 @@ nan@^2.2.1:
   version "2.8.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.8.0.tgz#ed715f3fe9de02b57a5e6252d90a96675e1f085a"
 
-node-fetch@^2.0.0-alpha.9:
-  version "2.0.0-alpha.9"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.0.0-alpha.9.tgz#990c0634f510f76449a0d6f6eaec96b22f273628"
+node-fetch@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.3.0.tgz#1a1d940bbfb916a1d3e0219f037e89e71f8c5fa5"
+  integrity sha512-MOd8pV3fxENbryESLgVIeaGKrdl+uaYhCSSVkjeOb/31/njTpcis5aWfdqgNlHIrKOLRbMnfPINPOML2CIFeXA==
 
 once@^1.3.0:
   version "1.4.0"
@@ -489,9 +493,10 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-secp256k1@^3.3.1:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/secp256k1/-/secp256k1-3.4.0.tgz#1c905b256fa4ae5b9cc170e672dd59b4c5de46a4"
+secp256k1@^3.5.2:
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/secp256k1/-/secp256k1-3.6.2.tgz#da835061c833c74a12f75c73d2ec2e980f00dc1f"
+  integrity sha512-90nYt7yb0LmI4A2jJs1grglkTAXrBwxYAjP9bpeKjvJKOjG2fOeH/YI/lchDMIvjrOasd5QXwvV2jwN168xNng==
   dependencies:
     bindings "^1.2.1"
     bip66 "^1.1.3"
@@ -576,9 +581,10 @@ verror@^1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-whatwg-fetch@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
+whatwg-fetch@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
+  integrity sha512-9GSJUgz1D4MfyKU7KRqwOjXCXTqWdFNvEr7eUBYchQiVc744mqK/MzXPNR2WsPkmkOa4ywfg8C2n8h+13Bey1Q==
 
 wrappy@1:
   version "1.0.2"
