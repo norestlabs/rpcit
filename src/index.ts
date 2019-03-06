@@ -1,5 +1,5 @@
-import {utils} from '@steemit/koa-jsonrpc'
-import {JsonRpcRequest, sign as signRequest} from '@steemit/rpc-auth'
+import {utils} from '@nrl-demo/koa-jsonrpc'
+import {JsonRpcRequest, sign as signRequest} from '@nrl-demo/rpc-auth'
 import {parse as parseUrl} from 'url'
 import {VError} from 'verror'
 

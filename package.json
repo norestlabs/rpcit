@@ -1,7 +1,7 @@
 {
-  "name": "rpcit",
+  "name": "@nrl-demo/rpcit",
   "version": "1.0.1",
-  "description": "Steemit JSON-RPC 2.0 Client",
+  "description": "Knowledgr JSON-RPC 2.0 Client",
   "main": "lib/index.js",
   "author": "Johan Nordberg <code@johan-nordberg.com>",
   "license": "MIT",
@@ -20,11 +20,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jnordberg/rpcit"
+    "url": "https://github.com/norestlabs/rpcit"
   },
   "dependencies": {
-    "@steemit/koa-jsonrpc": "^1.1.2",
-    "@steemit/rpc-auth": "^1.1.1",
+    "@nrl-demo/koa-jsonrpc": "^1.1.2",
+    "@nrl-demo/rpc-auth": "^1.1.3",
     "commander": "^2.13.0",
     "verror": "^1.10.0"
   },
