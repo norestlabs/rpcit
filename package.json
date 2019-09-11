@@ -1,5 +1,5 @@
 {
-  "name": "@nrl-demo/rpcit",
+  "name": "@knowledgr/rpcit",
   "version": "1.0.3",
   "description": "Knowledgr JSON-RPC 2.0 Client",
   "main": "lib/index.js",
@@ -23,8 +23,8 @@
     "url": "https://github.com/norestlabs/rpcit"
   },
   "dependencies": {
-    "@nrl-demo/koa-jsonrpc": "^1.1.7",
-    "@nrl-demo/rpc-auth": "^1.1.7",
+    "@knowledgr/koa-jsonrpc": "^1.1.7",
+    "@knowledgr/rpc-auth": "^1.1.7",
     "commander": "^2.13.0",
     "verror": "^1.10.0"
   },
